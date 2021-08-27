@@ -14,19 +14,19 @@ export default class KeypadComponent extends Component {
       this.result += e.target.value;
       this.args.set(this.result);
     }
-    console.log(this.result);
+    // console.log(this.result);
   }
 
   @action HandleC() {
     this.result = '';
     this.args.set(this.result);
-    console.log(this.result);
+    // console.log(this.result);
   }
 
   @action HandleCE() {
     this.result = this.result.substring(0, this.result.length - 1);
     this.args.set(this.result);
-    console.log(this.result);
+    // console.log(this.result);
   }
 
   @action HandleEqual() {
@@ -37,7 +37,7 @@ export default class KeypadComponent extends Component {
     else{
       this.args.set(this.result);
     }
-    console.log(this.result);
+    // console.log(this.result);
   }
 
   // @service('input') one;
